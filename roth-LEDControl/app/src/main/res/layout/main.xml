@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center">
+
+	<RelativeLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:padding="15dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/brightnesstv"
+			android:text="LED Brightness"/>
+
+		<SeekBar
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:layout_below="@id/brightnesstv"
+			android:id="@+id/sbBrightness"/>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:layout_below="@id/sbBrightness"
+			android:id="@+id/mainView1"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="LED Trigger"
+			android:layout_below="@id/mainView1"
+			android:id="@+id/mainTextView1"/>
+
+		<RadioGroup
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="vertical"
+			android:layout_below="@id/mainTextView1">
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrignone"
+				android:text="None"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigchargeorfull"
+				android:text="Battery Charging or Full"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigcharge"
+				android:text="Battery Charging"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigfull"
+				android:text="Battery Full"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigblinkcharge"
+				android:text="Blink While Charging"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigwall"
+				android:text="Plugged into Wall"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigusb"
+				android:text="Plugged in to USB"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigrfkill0"
+				android:text="rfkill0"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigmmc0"
+				android:text="mmc0"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigmmc1"
+				android:text="mmc1"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigmmc2"
+				android:text="mmc2"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigalwayson"
+				android:text="Default On"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigrfkill1"
+				android:text="rfkill1"/>
+
+			<RadioButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/rbtrigrfkill2"
+				android:text="rfkill2"/>
+
+		</RadioGroup>
+	</RelativeLayout>
+</ScrollView>
+
